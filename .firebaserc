@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "chat-10250": {
+      "hosting": {
+        "firepase": [
+          "chat-10250"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "chat-10250"
+  }
+}
