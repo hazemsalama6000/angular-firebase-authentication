@@ -19,5 +19,5 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
   ],
   providers: [],
   bootstrap: [AppComponent]
-})
+})//
 export class AppModule { }
