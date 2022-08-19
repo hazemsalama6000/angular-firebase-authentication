@@ -1,0 +1,70 @@
+section {
+  height: 100vh;
+  background: linear-gradient(30deg, rgb(94, 2, 2), rgb(196, 127, 127));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#loginform {
+  background-color: brown;
+  padding: 4%;
+  border-radius: 1rem;
+  color: gray;
+  width: 30%;
+
+
+  button[type="submit"] {
+    outline: none;
+    width: 100%;
+    background-color: rgb(94, 2, 2);
+    margin-top: 30px;
+    font-size: large;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: white;
+    border-color: white;
+    cursor:pointer ;
+  }
+
+  .text-div {
+    border-bottom: 1px solid rgb(109, 109, 109);
+    position: relative;
+
+    input {
+      background-color: brown;
+      border: none;
+      height: 50px;
+      width: 100%;
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    label {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transition: 1s;
+      pointer-events: none;
+    }
+
+    input:focus+label,
+    input:valid+label {
+      top: -5px;
+      color: aqua;
+    }
+
+  }
+
+  hr {
+    margin-top: 10px;
+  }
+
+  div {
+    margin-top: 20px;
+  }
+
+
+}
