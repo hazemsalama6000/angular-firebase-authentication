@@ -23,10 +23,9 @@ export class RegisterComponent {
   ) {}
 
   signUpt(model: ISignupCredentials) {
-    this.router.navigateByUrl('/layout')
-   /*  this.authService.signup(model).subscribe(
-      () => {this.router.navigateByUrl('./layout')},
-      (error) => {}
-    ); */
+    this.authService.signup(model).subscribe(
+      () => {this.router.navigate(['layout'])},
+      (error) => {console.log(error)}
+    );
   }
 }

@@ -9,7 +9,7 @@ import { authService } from '../auth/services/auth.service';
 })
 
 export class LayoutComponent {
-  constructor(private authService:authService){
+  constructor(public authService:authService){
 
   }
 }

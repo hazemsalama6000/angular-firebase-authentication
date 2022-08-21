@@ -1,5 +1,7 @@
-<div *ngIf="authService.is">
-asdasdadd
+<div *ngIf="authService.islogging$ | async as user ">
+
+  <span>{{user.email}}</span>
+
 </div>
 
 
