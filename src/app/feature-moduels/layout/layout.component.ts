@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgModel } from '@angular/forms';
+import { authService } from '../auth/services/auth.service';
 
 @Component({
   selector: 'layout',
@@ -7,4 +8,8 @@ import { NgModel } from '@angular/forms';
   styleUrls: ['./layout.component.scss'],
 })
 
-export class LayoutComponent {}
+export class LayoutComponent {
+  constructor(private authService:authService){
+
+  }
+}

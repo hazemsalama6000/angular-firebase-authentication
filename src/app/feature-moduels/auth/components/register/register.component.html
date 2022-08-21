@@ -1,0 +1,36 @@
+<section id="login">
+
+
+  <div id="loginform">
+
+    <h1>Login page</h1>
+
+    <hr>
+
+    <form [formGroup]="Registerform" (ngSubmit)="signUpt(Registerform.value)">
+
+      <div id="email" class="text-div">
+        <input type="text" id="UserName" name="displayName" required formControlName="displayName">
+        <label>UserName</label>
+      </div>
+
+
+      <div id="email" class="text-div">
+        <input type="text" id="email" name="email" required formControlName="email">
+        <label>Email</label>
+      </div>
+
+      <div id="password" class="text-div">
+        <input type="password" id="password" name="password" required formControlName="password">
+        <label>Password</label>
+      </div>
+
+      <button type="submit">
+        Login
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
