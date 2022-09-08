@@ -1,7 +1,7 @@
 <div *ngIf="authService.islogging$ | async as user ">
 
-  <span>{{user.email}}</span>
-
+  <span>{{user.displayName}}</span>
+<button type="button" (click)="SignOut()">SignOut</button>
 </div>
 
 

@@ -1,8 +1,7 @@
+import { ISignInCredential } from "./ISignInCredential.interface";
 
 
-export interface ISignupCredentials
+export interface ISignupCredentials extends ISignInCredential
 {
-  displayName:string,
-  email:string,
-  password:string
+  displayName:string
 }
