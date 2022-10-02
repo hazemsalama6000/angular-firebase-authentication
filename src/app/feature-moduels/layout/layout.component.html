@@ -1,8 +1,8 @@
-<div *ngIf="authService.islogging$ | async as user ">
-
-  <span>{{user.displayName}}</span>
-<button type="button" (click)="SignOut()">SignOut</button>
-</div>
-
+<header>
+   <div class="d-flex bg-dark justify-content-center align-items-center" *ngIf="authService.islogging$ | async as user ">
+      <span  class="mx-5 text-white">{{user.displayName | uppercase}}</span>
+      <button class="btn btn-success btn-outline-info" type="button" (click)="SignOut()">SignOut</button>
+   </div>
+</header>
 
 <router-outlet></router-outlet>
